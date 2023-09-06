@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap');
+body{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: 'Noto Sans', sans-serif;
+    color:#fafafa;
+    margin-top: 5vh;
+}
+
+.phoneCanvas{
+    width: 300px;
+    height: 650px;
+    /* 2.164 */
+    background-color: #000000;
+    border: 5px solid #fafafa;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.topBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.left{
+    text-align: left;
+    justify-self: start;
+    margin-left: 12px;
+}
+.right{
+    text-align: right;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+#time{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.profileInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.backBtn{
+    text-align: left;
+    justify-self: start;
+    margin-left: 7px;
+}
+
+.profileImg img, .contactBar img{
+    border-radius: 50%;
+}
+
+.profileInfo{
+    text-align: left;
+    white-space: nowrap;
+}
+.profile{
+    margin-top: -10px;
+    min-width: 130px;
+    max-width: 130px;
+}
+#profileName{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#profileTag{
+    font-size: 10px;
+    margin-top: 0px;
+    color:#b4b4b4;
+}
+
+.contactBtn{
+    text-align: right;
+    justify-self: end;
+    margin-right: 12px;
+}
+
+hr{
+    background-color: #242424;
+    height: 1px;
+    border: 0;
+    margin-top: 0;
+
+}
+
+.contactBar{
+    text-align: center;
+}
+
+.contactBar p{
+    color:#b4b4b4;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.viewProfileBtn{
+    background-color: #242424;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
