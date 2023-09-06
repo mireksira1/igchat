@@ -25,7 +25,7 @@
                         <img height="35px" src="/img/nameBar_left.png">
                     </div>
                     <div class="profileImg">
-                        <img height="30px" src="img/profilephoto.png" style="margin-bottom: 0">
+                        <img height="30px" src="img/profilephoto.png" style="margin-bottom: 0" id="userPhoto">
                     </div>
                     <div class="profile">
                         <p id="profileName">Name Placeholder</p>
@@ -38,18 +38,36 @@
                 </div>
                 <hr>
                 <div class="contactBar">
-                    <img height="80px" src="img/profilephoto.png" style="margin-top: 20px;">
+                    <img height="80px" src="img/profilephoto.png" style="margin-top: 20px;" id="userPhoto2">
                     <p id="contact0" style="color: #fafafa; font-size: 14px; margin-bottom: 4px; font-weight: 600;">Name Placeholder</p>
                     <p id="contact1">profileTag • Instagram</p>
                     <p id="contact2">00M followers • 42 posts</p>
                     <p style="margin-bottom: 10px;">You don't follow each other on Instagram</p>
-                    <a class="viewProfileBtn">View profile</a>
+                    <a class="viewProfileBtn" onclick="window.location.reload();">View profile</a>
                 </div>
-                <div class="chat"></div>
+                <div class="chat">
+                    <div class="cameraIco">
+                        <img height="35px" src="/img/cameraIco.png">
+                    </div>
+                    <div class="chatInput" style="margin: 0; text-align: center;">
+                        <input type="text" placeholder="Message...">
+                    </div>
+                    <div class="chatIco2">
+                        <img height="20px" src="/img/chatIco2.png">
+                    </div>
+                </div>
                 <div class="typeBar"></div>
+            </div>
+            <div class="responder">
+                <div class="settings" onmousemove="getUserInfo()">
+                    <input type="text" placeholder="User Name" maxlength="12" id="userName" onclick="getUserInfo()" onblur="getUserInfo()" onchange="getUserInfo()" onfocus="getUserInfo()">
+                    <input type="text" placeholder="IG Tag" maxlength="30" id="userTag" onclick="getUserInfo()" onblur="getUserInfo()" onchange="getUserInfo()" onfocus="getUserInfo()">
+                    <input type="text" placeholder="Num of followers" id="userFollowers" onclick="getUserInfo()" onblur="getUserInfo()" onchange="getUserInfo()" onfocus="getUserInfo()">
+                    <input type="number" placeholder="Num of posts" id="userPosts" onclick="getUserInfo()" onblur="getUserInfo()" onchange="getUserInfo()" onfocus="getUserInfo()">
+                    <input type="file" id="userPhoto" style="min-width: 276px; font-style: italic; margin-top: 10px;" accept="image/*" onchange="loadFile(event)">
+                </div>
             </div>
         </div>
     </body>
-    <script src="chat.js" ></script>
-    <script src="device.js" ></script>
+    <script src="/js/settings.js"></script>
 </html>
